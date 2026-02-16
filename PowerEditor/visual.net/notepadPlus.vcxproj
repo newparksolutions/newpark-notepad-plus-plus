@@ -101,6 +101,15 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PostBuildEvent>
+      <Command>
+copy "..\src\langs.model.xml" "$(OutDir)langs.model.xml"
+copy "..\src\stylers.model.xml" "$(OutDir)stylers.model.xml"
+copy "..\src\shortcuts.xml" "$(OutDir)shortcuts.xml"
+copy "..\src\contextMenu.xml" "$(OutDir)contextMenu.xml"
+xcopy /Y /I /E "$(SolutionDir)..\..\NewparkPlugins\*" "$(OutDir)plugins\"
+      </Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
   </ItemDefinitionGroup>
