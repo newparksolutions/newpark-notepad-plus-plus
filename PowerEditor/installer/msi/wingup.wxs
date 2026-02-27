@@ -3,7 +3,7 @@
 		<!--
 		WinGUp
 		-->
-		<ComponentGroup Id="AutoUpdatorComponentGroup" Directory="UpdaterFolder">
+		<!--<ComponentGroup Id="AutoUpdatorComponentGroup" Directory="UpdaterFolder">
 			<Component Id="gup_exe">
 				<File Source="..\..\bin64\updater\GUP.exe" KeyPath="yes" />
 			</Component>
@@ -22,6 +22,6 @@
 			<Component Id="gup_README_md">
 				<File Source="..\..\bin64\updater\README.md" KeyPath="yes" />
 			</Component>
-		</ComponentGroup>
+		</ComponentGroup>-->
 	</Fragment>
 </Wix>

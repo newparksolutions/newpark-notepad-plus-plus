@@ -190,19 +190,19 @@ notInSilentMode:
 	${GetOptions} $R0 "/noUpdater" $R1 ;case insensitive 
 	IfErrors withUpdater withoutUpdater
 withUpdater:
-	StrCpy $noUpdater "false"
+	StrCpy $noUpdater "true"
 	Goto updaterDone
 withoutUpdater:
 	StrCpy $noUpdater "true"
 updaterDone:
 
-	${If} $noUpdater == "true"
-		!insertmacro UnSelectSection ${AutoUpdater}
-		SectionSetText ${AutoUpdater} ""
-		!insertmacro UnSelectSection ${PluginsAdmin}
-		SectionSetText ${PluginsAdmin} ""
-	${EndIf}
-	; End of "/noUpdater"
+	;${If} $noUpdater == "true"
+	;	!insertmacro UnSelectSection ${AutoUpdater}
+	;	SectionSetText ${AutoUpdater} ""
+	;	!insertmacro UnSelectSection ${PluginsAdmin}
+	;	SectionSetText ${PluginsAdmin} ""
+	;${EndIf}
+	;; End of "/noUpdater"
 
 	; Begin of "/runNppAfterSilentInstall"
 	${GetParameters} $R0 

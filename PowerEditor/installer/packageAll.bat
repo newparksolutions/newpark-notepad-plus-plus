@@ -17,7 +17,8 @@ rem along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 echo on
 
-if %SIGN% == 0 goto NoSign
+rem if %SIGN% == 0 
+goto NoSign
 
 REM commands to sign
 
@@ -373,58 +374,58 @@ If ErrorLevel 1 goto End
 
 rem Plugins Admin
 rem for disabling auto-updater
-copy /Y ..\src\config.4zipPackage.xml .\zipped.package.release\config.xml
-If ErrorLevel 1 goto End
-copy /Y ..\bin\plugins\Config\nppPluginList.dll .\zipped.package.release\plugins\Config\
-If ErrorLevel 1 goto End
-copy /Y ..\bin\updater\GUP.exe .\zipped.package.release\updater\
-If ErrorLevel 1 goto End
-copy /Y ..\bin\updater\libcurl.dll .\zipped.package.release\updater\
-If ErrorLevel 1 goto End
-copy /Y ..\bin\updater\gup.xml .\zipped.package.release\updater\
-If ErrorLevel 1 goto End
-copy /Y ..\bin\updater\LICENSE .\zipped.package.release\updater\
-If ErrorLevel 1 goto End
-copy /Y ..\bin\updater\README.md .\zipped.package.release\updater\
-If ErrorLevel 1 goto End
-copy /Y ..\bin\updater\updater.ico .\zipped.package.release\updater\
-If ErrorLevel 1 goto End
+rem copy /Y ..\src\config.4zipPackage.xml .\zipped.package.release\config.xml
+rem If ErrorLevel 1 goto End
+rem copy /Y ..\bin\plugins\Config\nppPluginList.dll .\zipped.package.release\plugins\Config\
+rem If ErrorLevel 1 goto End
+rem copy /Y ..\bin\updater\GUP.exe .\zipped.package.release\updater\
+rem If ErrorLevel 1 goto End
+rem copy /Y ..\bin\updater\libcurl.dll .\zipped.package.release\updater\
+rem If ErrorLevel 1 goto End
+rem copy /Y ..\bin\updater\gup.xml .\zipped.package.release\updater\
+rem If ErrorLevel 1 goto End
+rem copy /Y ..\bin\updater\LICENSE .\zipped.package.release\updater\
+rem If ErrorLevel 1 goto End
+rem copy /Y ..\bin\updater\README.md .\zipped.package.release\updater\
+rem If ErrorLevel 1 goto End
+rem copy /Y ..\bin\updater\updater.ico .\zipped.package.release\updater\
+rem If ErrorLevel 1 goto End
 
 rem For disabling auto-updater
-copy /Y ..\src\config.4zipPackage.xml .\zipped.package.release64\config.xml
-If ErrorLevel 1 goto End
-copy /Y ..\bin64\plugins\Config\nppPluginList.dll .\zipped.package.release64\plugins\Config\
-If ErrorLevel 1 goto End
-copy /Y ..\bin64\updater\GUP.exe .\zipped.package.release64\updater\
-If ErrorLevel 1 goto End
-copy /Y ..\bin64\updater\libcurl.dll .\zipped.package.release64\updater\
-If ErrorLevel 1 goto End
-copy /Y ..\bin64\updater\gup.xml .\zipped.package.release64\updater\
-If ErrorLevel 1 goto End
-copy /Y ..\bin64\updater\LICENSE .\zipped.package.release64\updater\
-If ErrorLevel 1 goto End
-copy /Y ..\bin64\updater\README.md .\zipped.package.release64\updater\
-If ErrorLevel 1 goto End
-copy /Y ..\bin64\updater\updater.ico .\zipped.package.release64\updater\
-If ErrorLevel 1 goto End
+rem copy /Y ..\src\config.4zipPackage.xml .\zipped.package.release64\config.xml
+rem If ErrorLevel 1 goto End
+rem copy /Y ..\bin64\plugins\Config\nppPluginList.dll .\zipped.package.release64\plugins\Config\
+rem If ErrorLevel 1 goto End
+rem copy /Y ..\bin64\updater\GUP.exe .\zipped.package.release64\updater\
+rem If ErrorLevel 1 goto End
+rem copy /Y ..\bin64\updater\libcurl.dll .\zipped.package.release64\updater\
+rem If ErrorLevel 1 goto End
+rem copy /Y ..\bin64\updater\gup.xml .\zipped.package.release64\updater\
+rem If ErrorLevel 1 goto End
+rem copy /Y ..\bin64\updater\LICENSE .\zipped.package.release64\updater\
+rem If ErrorLevel 1 goto End
+rem copy /Y ..\bin64\updater\README.md .\zipped.package.release64\updater\
+rem If ErrorLevel 1 goto End
+rem copy /Y ..\bin64\updater\updater.ico .\zipped.package.release64\updater\
+rem If ErrorLevel 1 goto End
 
 rem For disabling auto-updater
-copy /Y ..\src\config.4zipPackage.xml .\zipped.package.releaseArm64\config.xml
-If ErrorLevel 1 goto End
-copy /Y ..\binarm64\plugins\Config\nppPluginList.dll .\zipped.package.releaseArm64\plugins\Config\
-If ErrorLevel 1 goto End
-copy /Y ..\binarm64\updater\GUP.exe .\zipped.package.releaseArm64\updater\
-If ErrorLevel 1 goto End
-copy /Y ..\binarm64\updater\libcurl.dll .\zipped.package.releaseArm64\updater\
-If ErrorLevel 1 goto End
-copy /Y ..\binarm64\updater\gup.xml .\zipped.package.releaseArm64\updater\
-If ErrorLevel 1 goto End
-copy /Y ..\binarm64\updater\LICENSE .\zipped.package.releaseArm64\updater\
-If ErrorLevel 1 goto End
-copy /Y ..\binarm64\updater\README.md .\zipped.package.releaseArm64\updater\
-If ErrorLevel 1 goto End
-copy /Y ..\binarm64\updater\updater.ico .\zipped.package.releaseArm64\updater\
-If ErrorLevel 1 goto End
+rem copy /Y ..\src\config.4zipPackage.xml .\zipped.package.releaseArm64\config.xml
+rem If ErrorLevel 1 goto End
+rem copy /Y ..\binarm64\plugins\Config\nppPluginList.dll .\zipped.package.releaseArm64\plugins\Config\
+rem If ErrorLevel 1 goto End
+rem copy /Y ..\binarm64\updater\GUP.exe .\zipped.package.releaseArm64\updater\
+rem If ErrorLevel 1 goto End
+rem copy /Y ..\binarm64\updater\libcurl.dll .\zipped.package.releaseArm64\updater\
+rem If ErrorLevel 1 goto End
+rem copy /Y ..\binarm64\updater\gup.xml .\zipped.package.releaseArm64\updater\
+rem If ErrorLevel 1 goto End
+rem copy /Y ..\binarm64\updater\LICENSE .\zipped.package.releaseArm64\updater\
+rem If ErrorLevel 1 goto End
+rem copy /Y ..\binarm64\updater\README.md .\zipped.package.releaseArm64\updater\
+rem If ErrorLevel 1 goto End
+rem copy /Y ..\binarm64\updater\updater.ico .\zipped.package.releaseArm64\updater\
+rem If ErrorLevel 1 goto End
 
 
 
@@ -466,7 +467,7 @@ rem set var locally in this batch file
 setlocal 
 
 :: Get npp.6.9.Installer.exe in %nppInstallerVar%
-for %%f in (npp.*.Installer.exe) do set "nppInstallerVar=%%f"
+for %%f in (.\build\npp.*.Installer.exe) do set "nppInstallerVar=%%~nxf"
 
 rem get the version string "6.9" in %VERSION%
 set "VERSION=%nppInstallerVar:npp.=%"
