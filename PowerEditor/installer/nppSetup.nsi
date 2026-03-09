@@ -65,8 +65,8 @@ Var runningNppDetected
 !insertmacro CheckIfRunning "un."
 
 ; Modern interface settings
-!define MUI_ICON ".\images\npp_inst.ico"
-!define MUI_UNICON ".\images\npp_inst.ico"
+!define MUI_ICON ".\images\newpark_icon.ico"
+!define MUI_UNICON ".\images\newpark_icon.ico"
 
 !define MUI_WELCOMEFINISHPAGE_BITMAP ".\images\wizard.bmp"
 ;!define MUI_WELCOMEFINISHPAGE_BITMAP ".\images\wizard_GiletJaune.bmp"

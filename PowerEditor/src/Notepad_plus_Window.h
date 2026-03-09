@@ -56,6 +56,10 @@ public:
 		return _className;
 	}
 
+	static const wchar_t * getDisplayName() {
+		return _displayName;
+	}
+
 	HICON getAbsentIcoHandle() {
 		return _hIconAbsent;
 	}
@@ -74,6 +78,7 @@ private:
 	LRESULT runProc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM lParam);
 
 	static constexpr wchar_t _className[32] = L"Notepad++";
+	static constexpr wchar_t _displayName[32] = L"Newpark Notepad++";
 	bool _isPrelaunch = false;
 	bool _disablePluginsManager = false;
 
