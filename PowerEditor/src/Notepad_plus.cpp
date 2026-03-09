@@ -4169,7 +4169,7 @@ void Notepad_plus::setTitle()
 		result += buf->getFullPathName();
 	}
 	result += L" - ";
-	result += _pPublicInterface->getClassName();
+	result += _pPublicInterface->getDisplayName();
 
 	if (_isAdministrator)
 		result += L" [Administrator]";
